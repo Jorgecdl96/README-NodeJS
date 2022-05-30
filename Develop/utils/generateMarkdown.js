@@ -37,6 +37,7 @@ function renderLicenseBadge(license) {
       break;
       
     default:
+      badge = '';
       break;
   }
 
@@ -81,6 +82,7 @@ function renderLicenseLink(license) {
       break;
       
     default:
+      licenseLink = '';
       break;
   }
 
@@ -2259,6 +2261,7 @@ limitations under the License.`;
       break;
       
     default:
+      licenseSection = '';
       break;
   }
 
@@ -2268,9 +2271,9 @@ limitations under the License.`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
   ### ${renderLicenseBadge(data.license)}
-  ### ${renderLicenseLink(data.license)}
-  ### ${renderLicenseSection(data.license)}
+
 
 ## Description
 
@@ -2282,6 +2285,8 @@ ${data.description}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Contribution](#contribution)
+- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
@@ -2299,30 +2304,22 @@ ${data.contribution}
 ## License
 
 ${data.license}
+${renderLicenseLink(data.license)}
+${renderLicenseSection(data.license)}
 
-## Badges
+## Contribution
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+${data.contribution}.
 
 ## Tests
 
-${data.tests}
+${data.tests}.
 
-##Questions
+## Questions
 
-My GitHub: ${data.github}.
+My GitHub: https://github.com/${data.github}
 
-My Email: ${data.email}.
+You can send an e-mail to ${data.email} for any additional question.
 `;
 }
 
