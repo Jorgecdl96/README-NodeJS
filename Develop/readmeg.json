@@ -1,0 +1,11 @@
+{
+	"title": "ReadmeG",
+	"description": "this project works as readme generator",
+	"installation": "npm i",
+	"usage": "you should run your command ",
+	"contribution": "No Contribution",
+	"license": "Mozilla Public License 2.0",
+	"tests": "No tests available.",
+	"github": "Jorgecdl",
+	"email": "Jorgecdl96@gmail.com"
+}
