@@ -2304,7 +2304,9 @@ ${data.contribution}
 ## License
 
 ${data.license}
+
 ${renderLicenseLink(data.license)}
+
 ${renderLicenseSection(data.license)}
 
 ## Contribution
