@@ -131,19 +131,13 @@ const questions = [
 inquirer
   .prompt(questions)
   .then((data) => {
-      
-    const filename = `${data.title.toLowerCase().split(' ').join('')}.json`;
 
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-      err ? console.log(err) : console.log('Success!')
-    );
-
-    writeToFile(filename, data);
+    writeToFile(data);
 
   });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
 
     fs.writeFile('READMEGENERATOR.md', generateMarkdown(data), (err) =>
     err ? console.log(err) : console.log('Success!')
