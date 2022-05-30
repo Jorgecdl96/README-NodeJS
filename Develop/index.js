@@ -128,13 +128,7 @@ const questions = [
 
 ];
 
-inquirer
-  .prompt(questions)
-  .then((data) => {
 
-    writeToFile(data);
-
-  });
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
@@ -146,7 +140,16 @@ function writeToFile(data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+  .prompt(questions)
+  .then((data) => {
+
+    writeToFile(data);
+
+  })
+  .catch(err => console.log(err));
+}
 
 // Function call to initialize app
 init();
