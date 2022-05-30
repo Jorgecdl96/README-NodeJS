@@ -87,6 +87,20 @@ const questions = [
         }
       },
       {
+        type: 'checkbox',
+        message: 'Please select which languages did you use for this project:',
+        choices: ['JavaScript','HTML'],
+        name: 'language',
+        validate: (answer) => {
+            if(answer){
+                return true;
+            }else{
+                console.log('\nYou have not submitted the language used, please provide it');
+                return false;
+            }
+        }
+      },
+      {
         type: 'input',
         message: 'Provide tests for your project if needed. ',
         name: 'tests',
@@ -145,7 +159,7 @@ inquirer
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeFile('README.md', generateMarkdown(data), (err) =>
+    fs.writeFile('READMEGENERATOR.md', generateMarkdown(data), (err) =>
     err ? console.log(err) : console.log('Success!')
     );
 
