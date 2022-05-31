@@ -2283,7 +2283,6 @@ ${data.description}
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 - [Contribution](#contribution)
 - [Tests](#tests)
@@ -2296,10 +2295,6 @@ ${data.installation}
 ## Usage
 
 ${data.usage}
-
-## Credits
-
-${data.contribution}
 
 ## License
 
