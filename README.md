@@ -12,7 +12,6 @@ This Project helps to create a README from scratch with help of NodeJS. Provide 
 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
   - [License](#license)
   - [Contribution](#contribution)
   - [Tests](#tests)
