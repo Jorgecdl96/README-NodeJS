@@ -2184,9 +2184,9 @@ limitations under the License.`;
       break;
       
     case 'MIT License':
-      licenseSection = `MIT License
+      licenseSection = `
 
-      Copyright (c) [year] [fullname]
+      MIT License Copyright (c) [year] [fullname]
       
       Permission is hereby granted, free of charge, to any person obtaining a copy
       of this software and associated documentation files (the "Software"), to deal
@@ -2208,7 +2208,9 @@ limitations under the License.`;
       break;
 
     case 'Boost Software License 1.0':
-      licenseSection = `Boost Software License - Version 1.0 - August 17th, 2003
+      licenseSection = `
+
+      Boost Software License - Version 1.0 - August 17th, 2003
 
       Permission is hereby granted, free of charge, to any person or organization
       obtaining a copy of the software and accompanying documentation covered by
@@ -2298,9 +2300,7 @@ ${data.usage}.
 
 ## License
 
-${data.license}.
-
-${renderLicenseLink(data.license)}
+### ${data.license} (${renderLicenseLink(data.license)})
 
 ${renderLicenseSection(data.license)}
 
