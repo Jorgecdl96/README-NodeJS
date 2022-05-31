@@ -67,4 +67,4 @@ You can send an e-mail to Jorgecdl96@gmail.com for any additional question.
 
 ## Walkthrough Video
 
-
+[Video](./Walkthrough%20Video%20.mov)
