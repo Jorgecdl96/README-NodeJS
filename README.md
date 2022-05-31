@@ -7,6 +7,7 @@
 
 This Project helps to create a README from scratch with help of NodeJS. Provide a structured README with the principal topics should the file consider before submitting it to your GitHub repositorie. The Readme  is structured by the following: title, description, table of contents, installation, usage, contributing, tests and questions sections.
 
+
 ## Table of Contents
 
   - [Installation](#installation)
@@ -67,4 +68,6 @@ You can send an e-mail to Jorgecdl96@gmail.com for any additional question.
 
 ## Walkthrough Video
 
-[Video](./Walkthrough%20Video%20.mov)
+You can see an example of how the project works by clicking on link below:
+
+[Video](https://drive.google.com/file/d/1dGV4xkQGf7mv3djkpvoElfNaAjgT_aOa/view?usp=sharing)
