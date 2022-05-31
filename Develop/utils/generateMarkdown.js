@@ -95,8 +95,9 @@ function renderLicenseSection(license) {
   let licenseSection = '';
   switch (license) {
     case 'GNU AGPLv3':
-      licenseSection = `                    GNU AFFERO GENERAL PUBLIC LICENSE
-      Version 3, 19 November 2007
+      licenseSection = `
+      GNU AFFERO GENERAL PUBLIC LICENSE
+          Version 3, 19 November 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 Everyone is permitted to copy and distribute verbatim copies
@@ -759,8 +760,9 @@ For more information on this, and how to apply and follow the GNU AGPL, see
       break;
 
     case 'GNU GPLv3':
-      licenseSection = `                    GNU GENERAL PUBLIC LICENSE
-      Version 3, 29 June 2007
+      licenseSection = `
+                  GNU GENERAL PUBLIC LICENSE
+                    Version 3, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 Everyone is permitted to copy and distribute verbatim copies
@@ -1436,8 +1438,9 @@ Public License instead of this License.  But first, please read
       break;
 
     case 'GNU LGPLv3':
-      licenseSection = `                   GNU LESSER GENERAL PUBLIC LICENSE
-      Version 3, 29 June 2007
+      licenseSection = `                   
+              GNU LESSER GENERAL PUBLIC LICENSE
+                  Version 3, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 Everyone is permitted to copy and distribute verbatim copies
@@ -1604,7 +1607,8 @@ Library.`;
       break;
 
     case 'Mozilla Public License 2.0':
-      licenseSection = `Mozilla Public License Version 2.0
+      licenseSection = `
+                      Mozilla Public License Version 2.0
       ==================================
       
       1. Definitions
@@ -1980,9 +1984,10 @@ Library.`;
       break;
 
     case 'Apache License 2.0':
-      licenseSection = `                                 Apache License
-      Version 2.0, January 2004
-   http://www.apache.org/licenses/
+      licenseSection = `                                 
+      
+Apache License Version 2.0, January 2004
+http://www.apache.org/licenses/
 
 TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -2236,7 +2241,9 @@ limitations under the License.`;
       break;
       
     case 'The Unlicense':
-      licenseSection = `This is free and unencumbered software released into the public domain.
+      licenseSection = `
+      
+      This is free and unencumbered software released into the public domain.
 
       Anyone is free to copy, modify, publish, use, compile, sell, or
       distribute this software, either in source code form or as a compiled
