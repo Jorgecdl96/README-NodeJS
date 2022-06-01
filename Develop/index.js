@@ -139,7 +139,7 @@ function writeToFile(data) {
 
 // TODO: Create a function to initialize app
 function init() {
-   inquirer
+    inquirer
   .prompt(questions)
   .then((data) => {
 
